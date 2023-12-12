@@ -9,13 +9,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WeatherHomeComponent } from './modules/wheater/page/weather-home/weather-home.component';
 
-
-
 @NgModule({
-  declarations: [
-    AppComponent,
-    WeatherHomeComponent
-  ],
+  declarations: [AppComponent, WeatherHomeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -25,6 +20,6 @@ import { WeatherHomeComponent } from './modules/wheater/page/weather-home/weathe
     FontAwesomeModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

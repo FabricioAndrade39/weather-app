@@ -3,13 +3,12 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class WeatherService {
-
   private apiKey = '6382bcc26479515eedc5eecb7474992f';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   getWeatherDatas(cityName: string): Observable<any> {
     return this.http.get(
